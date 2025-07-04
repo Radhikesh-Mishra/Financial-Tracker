@@ -87,25 +87,26 @@ npm install
 npm run dev
 ```
 
-#### 5. Setup Environment Variables
+#### 5. Setup Environment Variables in backend for JWT_SECRET_KEY, MONGODB_URL, PORT
 
 ## Some images of the features of Financial Tracker
+#### 1. SignIn user
 ![Signin](https://github.com/user-attachments/assets/cc56a051-2103-46bc-b42d-ec90e65540b4)
-
+#### 2. Login User
 ![Login](https://github.com/user-attachments/assets/065497dd-c269-4741-af61-46ccd109d83e)
-
+#### 3. Dashboard for User
 ![Dashboard](https://github.com/user-attachments/assets/7b325126-ed58-44f6-9773-555e8c43b06d)
-
+#### 4. Dashboard with Alert message
 ![Dashboard with alert](https://github.com/user-attachments/assets/bde1f530-38bf-4be2-bcfc-43b0b7eceb1f)
-
+#### 5. Expense Report - Total money spent, Most used payment method, Most spent category, and Pie Chart for the spendings 
 ![Expense Report](https://github.com/user-attachments/assets/5e077adb-fb23-4dcf-acb5-f7c26af7fb0d)
-
+#### 6. Pie Chart for spendings in each category
 ![Pie Chart](https://github.com/user-attachments/assets/b2539678-1c4a-42c7-a68c-c4d962da4318)
-
+#### 7. Modal to set Budget limit for each category
 ![Set limit](https://github.com/user-attachments/assets/9b647824-7336-49a9-b8d7-f32aacd401d9)
-
+#### 8. Expense Table with smart suggestions based on expenses
 ![Expense Table](https://github.com/user-attachments/assets/75c0a14c-1b52-4caf-9e88-2a0f43a74d9a)
-
+#### 9. Modal for adding new expenses
 ![Add new Expense](https://github.com/user-attachments/assets/2869e026-9819-485e-a964-551ce20381b5)
-
+#### 10. Modal for editing an existing expense
 ![Edit Expense](https://github.com/user-attachments/assets/5d5a748b-63e7-4ff8-8591-9fe3a826aaaf)
