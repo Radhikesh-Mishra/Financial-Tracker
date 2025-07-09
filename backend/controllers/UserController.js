@@ -2,7 +2,7 @@ import User from "../models/userModel.js";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcryptjs";
 
-const JWT_SECRET = process.env.JWT_SECRET || "5uperM@n"; 
+const JWT_SECRET = process.env.JWT_SECRET; 
 
 const registerUser = async (req, res) => {
   const { username, email, password, phone } = req.body;
