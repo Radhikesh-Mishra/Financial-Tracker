@@ -5,6 +5,7 @@ import { login, register } from '../action/AuthAction';
 
 const Auth = () => {
     const [isLogIn, setIsLogIn] = useState(true);
+    const [isError, setIsError] = useState(false);
     const [formData, setFormData] = useState({
         username: "",
         phone: "",
@@ -20,6 +21,10 @@ const Auth = () => {
     useEffect(() => {
         if (user) {
             navigate('/dashboard');
+
+        } else {
+            setIsError(true);
+            setFormData({ username: "", phone: "", email: "", password: "" });
         }
     }, [user, navigate]);
 
@@ -29,6 +34,7 @@ const Auth = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        setIsError(false);
 
         if (isLogIn) {
             dispatch(login(formData));
@@ -127,6 +133,11 @@ const Auth = () => {
                         {isLogIn ? "Sign Up" : "Log In"}
                     </button>
                 </p>
+
+                {isError && (
+                    <p className="text-red-500 text-center mt-4">
+                        Invalid credentials, please try again.
+                    </p>)}
             </div>
         </div>
     );
