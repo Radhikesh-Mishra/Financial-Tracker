@@ -6,7 +6,7 @@ import {
   editExpense,
   deleteExpense,
 } from "../action/ExpenseAction";
-import { smartSuggestions } from "../action/FlaskAction";
+// import { smartSuggestions } from "../action/FlaskAction";
 
 const Expenses = () => {
   const expenseData = useSelector((state) => state.expense.expenses);
@@ -33,18 +33,18 @@ const Expenses = () => {
     }
   }, [dispatch, user]);
 
-  useEffect(() => {
-  if (expenses.length > 0) {
-    dispatch(smartSuggestions(expenses))
-      .then((data) => {
+//   useEffect(() => {
+//   if (expenses.length > 0) {
+//     dispatch(smartSuggestions(expenses))
+//       .then((data) => {
         
-        setSuggestion(data.suggestions);
-      })
-      .catch((err) => {
-        console.error("Error while getting smart suggestions in component:", err);
-      });
-  }
-}, [expenses, dispatch]);
+//         setSuggestion(data.suggestions);
+//       })
+//       .catch((err) => {
+//         console.error("Error while getting smart suggestions in component:", err);
+//       });
+//   }
+// }, [expenses, dispatch]);
 
 
   const filteredExpenses = categoryFilter
