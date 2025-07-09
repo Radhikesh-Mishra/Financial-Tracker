@@ -1,5 +1,5 @@
 import Expense from "../models/ExpenseModel.js";
-import User from "../models/userModel.js";
+import User from "../models/UserModel.js";
 
 const getAllExpenses = async (req, res) => {
   const userId = req.query.userId;
