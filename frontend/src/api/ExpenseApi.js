@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'https://financial-tracker-t3xe.onrender.com' });
+const API = axios.create({ baseURL: 'https://financial-tracker-4ood.onrender.com' });
 
 export const addExpense = ( userId, formData ) => API.post("/api/expenses", { userId, formData });
 
