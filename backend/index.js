@@ -15,7 +15,7 @@ const app = e();
 app.use(cors());
   
 mongoose
-  .connect(process.env.MONGODB_URI || "mongodb+srv://FinancialTracker:R%40d123@atlascluster.mj2t0sf.mongodb.net/?retryWrites=true&w=majority&appName=AtlasCluster")
+  .connect(process.env.MONGODB_URI)
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.error("MongoDB connection error:", err));
 
