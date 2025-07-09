@@ -6,7 +6,7 @@ import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-const SpendingsPieChart = () => {
+const SpendingsPieChart = ({ expenseData, expenses }) => {
   const user = useSelector((state) => state.auth.user);
   const [chartData, setChartData] = useState(null);
 
@@ -38,7 +38,7 @@ const SpendingsPieChart = () => {
         ],
       });
     }
-  }, [user]);
+  }, [user, expenseData, expenses]);
 
   if (!chartData) return null;
 

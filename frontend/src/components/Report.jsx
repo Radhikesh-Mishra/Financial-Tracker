@@ -53,7 +53,7 @@ const Report = () => {
 
             setPreferredMethod(maxMethod);
         }
-    }, [user, expenses]);
+    }, [user, expenses, expenseData]);
 
 
     return (
@@ -86,7 +86,7 @@ const Report = () => {
             </div>
 
             <div className="p-8">
-                <SpendingsPieChart />
+                <SpendingsPieChart expenseData={expenseData} expenses={expenses}/>
             </div>
         </div>
     );
